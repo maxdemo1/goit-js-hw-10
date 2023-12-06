@@ -1,4 +1,26 @@
 /* Reset styles */
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 h1,
 h2,
 h3,
@@ -32,4 +54,29 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.link-list {
+  margin: 100px auto;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.link-list li a {
+  display: block;
+  padding: 30px;
+  background-color: rgb(148, 124, 148);
+  border-radius: 15px;
+  border: 4px solid rgba(71, 58, 71, 0.1);
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 32px;
+  transition: transform 250ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.link-list li a:hover,
+.link-list li a:focus {
+  transform: scale(1.05);
 }
