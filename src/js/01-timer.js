@@ -4,9 +4,11 @@ const hours = timer.querySelector('[data-hours]');
 const minutes = timer.querySelector('[data-minutes]');
 const seconds = timer.querySelector('[data-seconds]');
 const startButton = document.querySelector('[data-start]');
-
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+import iziToast from 'izitoast';
+import 'iziToast/dist/css/iziToast.min.css';
+
 let userDate;
 const options = {
   enableTime: true,

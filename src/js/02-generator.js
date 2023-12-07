@@ -2,6 +2,8 @@ const form = document.querySelector('.form');
 const delay = form.querySelector('input[name="delay"]');
 const fulfilledRadio = form.querySelector('input[value="fulfilled"]');
 const rejectedRadio = form.querySelector('input[value="rejected"]');
+import iziToast from 'izitoast';
+import 'iziToast/dist/css/iziToast.min.css';
 
 form.addEventListener('submit', event => {
   event.preventDefault();
@@ -22,7 +24,7 @@ form.addEventListener('submit', event => {
       iziToast.show({
         message: fulfilled,
         messageColor: 'white',
-        backgroundColor: 'rgb(99, 162, 99)',
+        backgroundColor: 'rgb(99, 162, 99)  ',
         position: 'topRight',
       });
     })
