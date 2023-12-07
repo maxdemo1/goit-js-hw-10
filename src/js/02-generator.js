@@ -41,4 +41,3 @@ form.addEventListener('submit', event => {
   rejectedRadio.checked = false;
   fulfilledRadio.checked = false;
 });
-a;
